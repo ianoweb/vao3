@@ -1,0 +1,27 @@
+# Public marketing website: all public content and brand assets may be crawled.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow link-preview crawlers to fetch the open-graph artwork and logo.
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# No login-only or private website paths are part of this frontend.
+User-agent: *
+Allow: /
+
+# Use the sitemap at the site root. Replace with its absolute public URL when
+# the production domain is confirmed.
+Sitemap: /sitemap.xml
